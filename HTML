@@ -5,24 +5,41 @@
     <title>BBBBBB</title>
     <style>
         .retangulo{
-            background-color: white;
+            background-color: black;
             color: rgb(64, 165, 224);
-            padding: 200px;
+            padding: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
             
-            font-size: 100px;
-            font-weight: bold;
+            font-size: 50px;
+            font-weight: 20px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .botao {
+        background-color: wheat;
+        color: #217cf3;
+        padding: 10px 16px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        }
+        .botoa-colorido {
+            background-color: black;
+            transform: scale(0.95);
+        }
+        .botao-colorido:active {
+        transform: scale(0.95);
+        }
     </style>
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-    <button class="botão">
+    <div class = "retangulo">AAAAAA</div>
+    <button class="botao" onclick="alert('Falha ao recarregar a página')">
         Clique aqui para conferir os produtos que fornecemos
     </button>
-<div class = "retangulo">AAAAAA</div>
-<link rel="stylesheet" href="style.css">
 </body>
 </html>
