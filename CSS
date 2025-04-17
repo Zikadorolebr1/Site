@@ -1,10 +1,16 @@
 .retangulo {
-    background-color: wheat;
-    color: white;
-    padding: 25px;
-    font-size: 25px;
+        background-color: black;
+        color: rgb(64, 165, 224);
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 50px;
+        font-weight: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-}
 .botao {
     background-color: #2196F3;
     color: white;
@@ -14,3 +20,17 @@
     border-radius: 6px;
     cursor: pointer;
   }
+  .botao-colorido {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-colorido:active {
+    transform: scale(0.95);
+}
