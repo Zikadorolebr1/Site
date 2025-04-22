@@ -5,38 +5,42 @@
     <meta name ="index" content="width=device-width, initial-scale=1.0">
     <title>BBBBBB</title>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
     <script>
         function abrirNovaJanela() {
             window.open("https://aaa.bbehgeig.com", "_blank");
         }
     </script>
 </head>
-<body>
-    <div class="retangulo bolha">AAAAAA</div>   
-    <div class="texto-digitado"> Seja bem-vindo ao meu site! </div> 
+<body>  
     <section>
-        <h3>Bolhas</h3>
+        <h3>AAAAAA</h3>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </section>
-    <script type="text/javascript">
+    <script type="text/javascript">setInterval(createBolhas, 200);
         function createBolhas(){
             const section = document.querySelector
-            ['section'];
+            ('section');
             const createElement = document.createElement
-            ['span'];
+            ('span');
             var size = Math.random() * 60;
 
             createElement.style.width = 20 + size + 'px';
             createElement.style.height = 20 + size +'px';
-            createElement.style.left = Math.random() *
-            innerWidth + 'px'
-            section.appendChild[createElement];
+            createElement.style.left = Math.random() * innerWidth + 'px'
+            section.appendChild(createElement);
 
             setTimeout(() => (
                 createElement.remove()
-            ),4000)
+            ),4000);
         }
     </script>
+    <div class="texto-digitado"> Seja bem-vindo ao meu site! </div> 
     <button class="botao botao-colorido" onclick= abrirNovaJanela()>
         Clique aqui para conferir os produtos que fornecemos
     </button>
