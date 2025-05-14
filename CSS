@@ -67,10 +67,16 @@ section::before {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 315px;
     perspective: 1000px;
-    margin: 40px auto;
+    
+    position: relative;
+    bottom: 20px;
+    left: 20px;       
+    
+    margin: 40px;          
+    z-index: 10;
 }
 
 .flip-card-inner {
@@ -80,6 +86,7 @@ section::before {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    will-change: transform;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -88,6 +95,8 @@ section::before {
 
 .flip-card-front,
 .flip-card-back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -95,7 +104,7 @@ section::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     border-radius: 10px;
@@ -103,7 +112,10 @@ section::before {
 }
 
 .flip-card-front {
+    position: relative;
     background-color: #2b39fc;
+    overflow: hidden;
+
 }
 
 .imagem-flip {
@@ -114,9 +126,36 @@ section::before {
 }
 
 .flip-card-back {
-    background-color: #217cf3;
+    background-color: #0a3b71;
     transform: rotateY(180deg);
     flex-direction: column;
+}
+
+.bubbles {
+    position: absolute;
+    bottom: -20px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    animation: bubble-rise 6s linear-infinite;
+    opacity: 0.7;
+}
+
+.bubble:nth-child(1) { left: 20%; animation-delay: 0s; width: 10px; height: 10px; }
+.bubble:nth-child(2) { left: 40%: animation-delay: 1s;}
+.bubble:nth-child(3) { left: 60%: animation-delay: 2s;}
+.bubble:nth-child(4) { left: 80%: animation-delay: 3s; width: 12px; height: 12px; }
+
+@keyframes bubble-rise {
+   0% {  
+    transform: translateY (0) scale(1);
+    opacity: 0.7;
+    }   
+   100% {
+    transform: translateY(-300px) scale(1.2)
+    opacity: 0;
+    } 
 }
 
 /* Botão */
