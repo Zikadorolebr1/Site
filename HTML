@@ -46,9 +46,9 @@
             <img src= "Image/img1.jpeg" alt="AAAAAAAA">
           </div>
           <div class="flip-card-back">
-          <span class="bubbles"></span>
-          <span class="bubbles"></span>
-          <span class="bubbles"></span> 
+          <div class="bubbles"></div>
+          <div class="bubbles"></div>
+          <div class="bubbles"></div>
             <h1>OHHHHHHH</h1>
             <p>dhfbwbfwefy</p>
             <p>We love that guy</p>
@@ -59,5 +59,28 @@
     <button class="botao botao-colorido" onclick= abrirNovaJanela()>
         Clique aqui para conferir os produtos que fornecemos
     </button>
+    <script>
+        function crarBolhas(container) {
+            const bolha = document.createElement('div')
+            bolha.classList.add('bubble');
+            bolha.style.left = Math.random() * 90 + '%';
+            bolha.style.width = 10 + Math.random() * 10 + 'px'
+            bolha.style.height = bolha.style.width;
+            bolha.style.animationDelay = Math.random() * 2 + 's'
+            container.appendChild(bolha);
+
+            setTimeout(() => {
+                bolha.remove();
+            }, 6000);
+        }
+
+        const frente = document.querySelector('.flip-card-front');
+        const tras = document.querySelector('.flip-card-back');
+
+        setInterval(() => {
+            criarBolhas(frente);
+            criarBolhas(tras);
+        }, 800);
+    </script> 
 </body>
 </html>
