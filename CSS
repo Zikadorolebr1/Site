@@ -140,6 +140,7 @@ section::before {
     border-radius: 50%;
     animation: bubble-rise 6s linear infinite;
     opacity: 0.7;
+    pointer-events: none;
 }
 
 .bubble:nth-child(1) { left: 20%; animation-delay: 0s; width: 10px; height: 10px; }
