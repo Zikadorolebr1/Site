@@ -97,7 +97,7 @@ section::before {
 .flip-card-back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -109,6 +109,22 @@ section::before {
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.bubble-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.flip-card-back h1,
+.flip-card-back p {
+    z-index: 1;
+    position: relative;
 }
 
 .flip-card-front {
@@ -133,14 +149,15 @@ section::before {
 
 .bubbles {
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     width: 15px;
     height: 15px;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.5);
     border-radius: 50%;
     animation: bubble-rise 6s linear infinite;
     opacity: 0.7;
     pointer-events: none;
+    z-index: 1;
 }
 
 .bubble:nth-child(1) { left: 20%; animation-delay: 0s; width: 10px; height: 10px; }
