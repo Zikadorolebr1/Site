@@ -43,12 +43,10 @@
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src= "Image/img1.jpeg" alt="AAAAAAAA">
+            <img src= "Image/img1.jpeg" alt="AAAAAAAA" class="imagem-flip">
           </div>
           <div class="flip-card-back">
-          <div class="bubbles"></div>
-          <div class="bubbles"></div>
-          <div class="bubbles"></div>
+          <div class="bubble-background"></div>
             <h1>OHHHHHHH</h1>
             <p>dhfbwbfwefy</p>
             <p>We love that guy</p>
@@ -60,7 +58,7 @@
         Clique aqui para conferir os produtos que fornecemos
     </button>
     <script>
-        function crarBolhas(container) {
+        function criarBolhas(container) {
             const bolha = document.createElement('div')
             bolha.classList.add('bubble');
             bolha.style.left = Math.random() * 90 + '%';
@@ -74,12 +72,12 @@
             }, 6000);
         }
 
-        const frente = document.querySelector('.flip-card-front');
-        const tras = document.querySelector('.flip-card-back');
+        const frenteBolhas = document.querySelector('.flip-card-front, bubble-background');
+        const trasBolhas = document.querySelector('.flip-card-back, bubble-background');
 
         setInterval(() => {
-            criarBolhas(frente);
-            criarBolhas(tras);
+            criarBolhas(frenteBolhas);
+            criarBolhas(trasBolhas);
         }, 800);
     </script> 
 </body>
