@@ -43,7 +43,7 @@
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src= "Image/img1.jpeg" alt="AAAAAAAA" class="imagem-flip">
+            <img src= "aaaaaaaaaaaaaaaa" alt="AAAAAAAA" class="imagem-flip">
           </div>
           <div class="flip-card-back">
           <div class="bubble-background"></div>
@@ -72,13 +72,35 @@
             }, 6000);
         }
 
-        const frenteBolhas = document.querySelector('.flip-card-front, bubble-background');
-        const trasBolhas = document.querySelector('.flip-card-back, bubble-background');
+        const frenteBolhas = document.querySelector('.flip-card-front, .bubble-background');
+        const trasBolhas = document.querySelector('.flip-card-back, .bubble-background');
 
         setInterval(() => {
             criarBolhas(frenteBolhas);
             criarBolhas(trasBolhas);
         }, 800);
     </script> 
+    <script>
+        function criarBolhas(container){
+
+        
+        const bolha = document.createElement('span');
+        let size = Math.random() * 60;
+
+        bolha.style.width = 20 + size + 'px';
+        bolha.style.height = 20 + size + 'px';
+        bolha.style.left = Math.random() * 100 + '%';
+
+        container.appendChild(bolha);
+
+        setTimeout(() => bolha.remove(), 4000);
+        }
+        
+        const bubbleContainer = document.querySelector('.bubble-background');
+
+        setInterval(() => {
+            criarBolhas(bubbleContainer);
+        }, 200);
+    </script>
 </body>
 </html>
