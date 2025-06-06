@@ -2,105 +2,108 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name ="index" content="width=device-width, initial-scale=1.0">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBBBBB</title>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
     <script>
         function abrirNovaJanela() {
-            window.open("https://aaa.bbehgeig.com", "_blank");
+            window.open("https://wa.me", "_blank");
         }
     </script>
 </head>
-<body>  
-    <section>
-        <h3>AAAAAA</h3>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </section>
-    <script type="text/javascript">setInterval(createBolhas, 200);
-        function createBolhas(){
-            const section = document.querySelector
-            ('section');
-            const createElement = document.createElement
-            ('span');
-            var size = Math.random() * 60;
+<body> 
+    <main> 
+        <section>
+            <h3>AAAAAA</h3>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+        <script type="text/javascript">setInterval(createBolhas, 200);
+            function createBolhas(){
+                const section = document.querySelector
+                ('section');
+                const createElement = document.createElement
+                ('span');
+                var size = Math.random() * 60;
 
-            createElement.style.width = 20 + size + 'px';
-            createElement.style.height = 20 + size +'px';
-            createElement.style.left = Math.random() * innerWidth + 'px'
-            section.appendChild(createElement);
+                createElement.style.width = 20 + size + 'px';
+                createElement.style.height = 20 + size +'px';
+                createElement.style.left = Math.random() * innerWidth + 'px'
+                section.appendChild(createElement);
 
-            setTimeout(() => (
-                createElement.remove()
-            ),4000);
-        }
-    </script>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src= "Image/img1.jpeg" alt="AAAAAAAA" class="imagem-flip">
-          </div>
-          <div class="flip-card-back">
-          <div class="bubble-background"></div>
-            <h1>OHHHHHHH</h1>
-            <p>dhfbwbfwefy</p>
-            <p>We love that guy</p>
-          </div>
+                setTimeout(() => (
+                    createElement.remove()
+                ),4000);
+            }
+        </script>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src= "aaaaaaaaaaaaaaaa" alt="AAAAAAAA" class="imagem-flip">
+            </div>
+            <div class="flip-card-back">
+                <div class="bubble-background"></div>
+                    <h1>OHHHHHHH</h1>
+                    <p>dhfbwbfwefy</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
         </div>
-      </div>
-    <div class="texto-digitado"> Seja bem-vindo ao meu site! </div> 
-    <button class="botao botao-colorido" onclick= abrirNovaJanela()>
-        Clique aqui para conferir os produtos que fornecemos
-    </button>
-    <script>
-        function criarBolhas(container) {
-            const bolha = document.createElement('div')
-            bolha.classList.add('bubble');
-            bolha.style.left = Math.random() * 90 + '%';
-            bolha.style.width = 10 + Math.random() * 10 + 'px'
-            bolha.style.height = bolha.style.width;
-            bolha.style.animationDelay = Math.random() * 2 + 's'
+        <div class="texto-digitado"> Seja bem-vindo ao meu site! </div> 
+        <button class="botao botao-colorido" onclick= abrirNovaJanela()>
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 8px;">
+            Clique aqui para conferir os produtos que fornecemos
+        </button>
+        <script>
+            function criarBolhas(container) {
+                const bolha = document.createElement('div')
+                bolha.classList.add('bubble');
+                bolha.style.left = Math.random() * 90 + '%';
+                bolha.style.width = 10 + Math.random() * 10 + 'px'
+                bolha.style.height = bolha.style.width;
+                bolha.style.animationDelay = Math.random() * 2 + 's'
+                container.appendChild(bolha);
+
+                setTimeout(() => {
+                    bolha.remove();
+                }, 6000);
+            }
+
+            const frenteBolhas = document.querySelector('.flip-card-front, .bubble-background');
+            const trasBolhas = document.querySelector('.flip-card-back, .bubble-background');
+
+            setInterval(() => {
+                criarBolhas(frenteBolhas);
+                criarBolhas(trasBolhas);
+            }, 800);
+        </script> 
+        <script>
+            function criarBolhas(container){
+
+        
+            const bolha = document.createElement('span');
+            let size = Math.random() * 60;
+
+            bolha.style.width = 20 + size + 'px';
+            bolha.style.height = 20 + size + 'px';
+            bolha.style.left = Math.random() * 100 + '%';
+
             container.appendChild(bolha);
 
-            setTimeout(() => {
-                bolha.remove();
-            }, 6000);
-        }
-
-        const frenteBolhas = document.querySelector('.flip-card-front .bubble-background');
-        const trasBolhas = document.querySelector('.flip-card-back .bubble-background');
-
-        setInterval(() => {
-            criarBolhas(frenteBolhas);
-            criarBolhas(trasBolhas);
-        }, 800);
-    </script> 
-    <script>
-        function criarBolhas(container){
-
+            setTimeout(() => bolha.remove(), 4000);
+            }
         
-        const bolha = document.createElement('span');
-        let size = Math.random() * 60;
+            const bubbleContainer = document.querySelector('.bubble-background');
 
-        bolha.style.width = 20 + size + 'px';
-        bolha.style.height = 20 + size + 'px';
-        bolha.style.left = Math.random() * 100 + '%';
-
-        container.appendChild(bolha);
-
-        setTimeout(() => bolha.remove(), 4000);
-        }
-        
-        const bubbleContainer = document.querySelector('.flip-card-back .bubble-background');
-
-        setInterval(() => {
-            criarBolhas(bubbleContainer);
-        }, 300);
-    </script>
+            setInterval(() => {
+                criarBolhas(bubbleContainer);
+            }, 200);
+        </script>
+    </main>
 </body>
 </html>
