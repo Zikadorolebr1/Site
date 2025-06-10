@@ -6,6 +6,7 @@
     <title>BBBBBB</title>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
     <script>
         function abrirNovaJanela() {
@@ -14,7 +15,7 @@
     </script>
 </head>
 <body> 
-    <main> 
+    <main class="site"> 
         <section>
             <h3>AAAAAA</h3>
             <span></span>
@@ -41,16 +42,12 @@
                 ),4000);
             }
         </script>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src= "aaaaaaaaaaaaaaaa" alt="AAAAAAAA" class="imagem-flip">
-            </div>
-            <div class="flip-card-back">
-                <div class="bubble-background"></div>
-                    <h1>OHHHHHHH</h1>
-                    <p>dhfbwbfwefy</p>
-                    <p>We love that guy</p>
+        <div class="card-retangulo"
+            <div class="card"> 
+                <img src="Image/img1.jpeg" class="card-img-top" alt="Descrição da imagem">
+                <div class="card-body">
+                    <h5 class="card-title">Título do Card</h5>
+                    <p class="card-text">Texto de exemplo para compor o conteúdo principal do card.</p>
                 </div>
             </div>
         </div>
@@ -74,36 +71,7 @@
                 }, 6000);
             }
 
-            const frenteBolhas = document.querySelector('.flip-card-front, .bubble-background');
-            const trasBolhas = document.querySelector('.flip-card-back, .bubble-background');
-
-            setInterval(() => {
-                criarBolhas(frenteBolhas);
-                criarBolhas(trasBolhas);
-            }, 800);
         </script> 
-        <script>
-            function criarBolhas(container){
-
-        
-            const bolha = document.createElement('span');
-            let size = Math.random() * 60;
-
-            bolha.style.width = 20 + size + 'px';
-            bolha.style.height = 20 + size + 'px';
-            bolha.style.left = Math.random() * 100 + '%';
-
-            container.appendChild(bolha);
-
-            setTimeout(() => bolha.remove(), 4000);
-            }
-        
-            const bubbleContainer = document.querySelector('.bubble-background');
-
-            setInterval(() => {
-                criarBolhas(bubbleContainer);
-            }, 200);
-        </script>
     </main>
 </body>
 </html>
