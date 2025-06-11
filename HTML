@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBBBBB</title>
+    <title>H2M Águas</title>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,12 +17,13 @@
 <body> 
     <main class="site"> 
         <section>
-            <h3>AAAAAA</h3>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <header class="cabecalho">
+                <h1>H2M Águas</h1>
+                <p>Qualidade, pureza e hidratação</p>
+                <nav class="menu">
+                    <a href ="#produto">Produtos</a>
+                    <a href="#contato">Contato</a>
+            </header>
         </section>
         <script type="text/javascript">setInterval(createBolhas, 200);
             function createBolhas(){
@@ -42,11 +43,11 @@
                 ),4000);
             }
         </script>
-        <div class="card-retangulo"
-            <div class="card"> 
-                <img src="Image/img1.jpeg" class="card-img-top" alt="Descrição da imagem">
+        <div class="card-retangulo">
+            <div class="card">
+                <img src="images/images (3).jpeg" class="card-img-top" alt="Descrição da imagem">
                 <div class="card-body">
-                    <h5 class="card-title">Título do Card</h5>
+                    <h5 class="card-title">textooo</h5>
                     <p class="card-text">Texto de exemplo para compor o conteúdo principal do card.</p>
                 </div>
             </div>
@@ -56,22 +57,6 @@
             <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 8px;">
             Clique aqui para conferir os produtos que fornecemos
         </button>
-        <script>
-            function criarBolhas(container) {
-                const bolha = document.createElement('div')
-                bolha.classList.add('bubble');
-                bolha.style.left = Math.random() * 90 + '%';
-                bolha.style.width = 10 + Math.random() * 10 + 'px'
-                bolha.style.height = bolha.style.width;
-                bolha.style.animationDelay = Math.random() * 2 + 's'
-                container.appendChild(bolha);
-
-                setTimeout(() => {
-                    bolha.remove();
-                }, 6000);
-            }
-
-        </script> 
     </main>
 </body>
 </html>
