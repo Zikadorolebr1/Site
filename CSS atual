@@ -41,14 +41,16 @@ section {
 .cabecalho p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  top: 0;
 }
 
 .menu a:hover {
   text-decoration: underline;
+  color: #03aefe;
 }
 
 section h3 {
-    background: linear-gradient(to bottom, #00ccff, #0066cc);
+    background: #4dccf7;;
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
@@ -103,8 +105,8 @@ section::before {
     font-family: sans-serif;
     margin: 10px;
     margin-left: 60px;
-    background: linear-gradient(135deg, #00ccff, #0066cc);
-    color: transparent;
+    background: linear-gradient(to bottom, #00ccff 0%, #0066cc 100%);
+    color: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
     transition: transform 0.3s;
@@ -112,7 +114,6 @@ section::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: transparent; /* Garante que o fundo seja transparente */
 }
 /* Novo container de imagem */
 .img-container {
@@ -170,7 +171,7 @@ section::before {
     display: flex;
     align-items: center;
     background-color: wheat;
-    color: #217cf3;
+    color: #1979f7;
     padding: 10px 20px;
     font-size: 15px;
     border: none;
