@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +10,7 @@
     <link rel="stylesheet" href="Style.css">
     <script>
         function abrirNovaJanela() {
-            window.open("https://wa.me coloca-se numero da empresa", "_blank");
+            window.open("https://wa.me/5511992984401", "_blank");
         }
     </script>
 </head>
@@ -24,7 +23,6 @@
                 <nav class="menu">
                     <a href ="#produto">Produtos</a>
                     <a href="#contato">Contato</a>
-                </nav>
             </header>
         </section>
         <script type="text/javascript">setInterval(createBolhas, 200);
@@ -40,29 +38,23 @@
                 createElement.style.left = Math.random() * innerWidth + 'px'
                 section.appendChild(createElement);
 
-                setTimeout(() => {
+                setTimeout(() => (
                     createElement.remove()
-            },4000);
+                ),4000);
             }
         </script>
-        <section id="produto" class="container my-5">
-            <h2>Nossos Produtos</h2>
-            <div class="row">
-            <div class="col-md-4">
+        <div class="card-retangulo">
             <div class="card">
-            <div class="card-retangulo">
-                <div class="card">
-                    <img src="Image/images (3).jpeg" class="card-img-top" alt="Produto-1">
-                    <div class="card-body">
-                        <h5 class="card-title">textooo</h5>
-                        <p class="card-text">Texto de exemplo para compor o conteúdo principal do card.</p>
-                    </div>
+                <img src="images/images (3).jpeg" class="card-img-top" alt="Descrição da imagem">
+                <div class="card-body">
+                    <h5 class="card-title">textooo</h5>
+                    <p class="card-text">Texto de exemplo para compor o conteúdo principal do card.</p>
                 </div>
             </div>
+        </div>
         <div class="texto-digitado"> Seja bem-vindo ao meu site! </div> 
-        <button class="botao botao-colorido" onclick= abrirNovaJanela()>
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 8px;">
-            <strong> Clique para falar com nossa equipe! </strong>
+        <button class="botao-container" onclick= abrirNovaJanela()>
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="botao-app">
         </button>
     </main>
 </body>
