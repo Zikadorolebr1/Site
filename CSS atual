@@ -2,6 +2,7 @@ body {
     height: 100vh;
     margin: 10% 15%;
     padding: 0;
+    box-sizing: border-box;
     background: #4dccf7;
     font-family: 'Arial', sans-serif;
 }
