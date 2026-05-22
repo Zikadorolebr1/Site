@@ -240,3 +240,11 @@ section::before {
     from { width: 0; }
     to { width: 20ch; }
 }
+
+section h3 {
+    font-size: 10em;
+    background: linear-gradient(to bottom, #00ccff, #0066cc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
